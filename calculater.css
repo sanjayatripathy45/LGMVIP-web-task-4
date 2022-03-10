@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.25s;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5abb5;
+}
+
+h2 {
+    font-family: fantasy;
+}
+
+.box {
+    height: 600px;
+    width: 350px;
+    padding: 20px;
+    background-color: #825cdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: -10px -10px 20px rgba(82, 52, 192, 0.6), 10px 10px 20px rgba(143, 49, 49, 0.2);
+}
+
+input#display {
+    width: 100%;
+    caret-color: transparent;
+    font-size: 30px;
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #a7b5e6;
+    box-shadow: inset -5px -5px 15px rgba(151, 129, 211, 0.6), inset 5px 5px 15px rgba(228, 143, 143, 0.2);
+}
+
+input {
+    text-align: right;
+    caret-color: transparent;
+    font-size: 30px;
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #babecc;
+    box-shadow: inset -5px -5px 15px #fff9, inset 5px 5px 15px #0003;
+}
+
+.btns {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 28px;
+}
+
+.btn:active {
+    background: linear-gradient(145deg, #0003, #fff9);
+    box-shadow: none;
+}
+
+#clear {
+    font-size: 20px;
+}
+
+input {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #babecc;
+    box-shadow: -5px -5px 10px #fff9, 5px 5px 10px #0003;
+}
+
+.btn {
+    background: linear-gradient(145deg, #0002, #fff9);
+}
+
+.sbtn:active,
+#eqbtn:active,
+#clear:active {
+    box-shadow: none;
+    background: linear-gradient(145deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.btn:active {
+    background: linear-gradient(145deg, #0003, #fff9);
+    box-shadow: none;
+}
+
+input.btn:hover {
+    background-color: rgb(124, 102, 219);
+}
+
+.sbtn,
+#eqbtn,
+#clear {
+    font-size: 30px;
+    color: #fff;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+}
