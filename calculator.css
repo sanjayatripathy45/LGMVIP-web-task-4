@@ -114,3 +114,8 @@ input.btn:hover {
     color: #fff;
     background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
 }
+
+input#eqbtn {
+    width: 100%;
+    text-align: center;
+}
